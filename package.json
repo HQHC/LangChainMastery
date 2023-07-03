@@ -10,7 +10,9 @@
     "@midwayjs/info": "^3.0.0",
     "@midwayjs/koa": "^3.0.0",
     "@midwayjs/logger": "^2.14.0",
-    "@midwayjs/validate": "^3.0.0"
+    "@midwayjs/validate": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "langchain": "^0.0.91"
   },
   "devDependencies": {
     "@midwayjs/cli": "^2.0.0",
@@ -41,10 +43,7 @@
     ".vscode/.tsbuildinfo",
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
+  "repository": "https://github.com/HQHC/LangChainMastery.git",
   "author": "anonymous",
   "license": "MIT"
 }

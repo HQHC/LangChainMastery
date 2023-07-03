@@ -6,6 +6,7 @@ import { join } from 'path';
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
 import { ReportMiddleware } from './middleware/report.middleware';
+import * as dotenv from 'dotenv';
 
 @Configuration({
   imports: [
@@ -23,6 +24,7 @@ export class ContainerLifeCycle {
   app: koa.Application;
 
   async onReady() {
+    dotenv.config();
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
     // add filter
